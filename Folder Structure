@@ -1,0 +1,15 @@
+legal-notes-website/
+│
+├── index.html        # homepage
+├── subjects.html     # all subjects list
+├── css/
+│   └── style.css     # styling
+├── js/
+│   └── script.js     # javascript for interactions
+├── subjects/
+│   ├── pil.html      # Public International Law
+│   ├── contract.html # Contract Law
+│   ├── crim.html     # Criminal Law
+│   └── const.html    # Constitutional Law
+└── assets/
+    └── images/       # logos, icons, etc.
