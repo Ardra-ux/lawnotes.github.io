@@ -1,0 +1,6 @@
+<hr>
+<h2>Ask AI about this subject</h2>
+<input id="question" placeholder="Type your question here">
+<button onclick="askAI('Subject Name')">Ask AI</button>
+<div id="answer"></div>
+<script src="../js/ask_ai.js"></script>
