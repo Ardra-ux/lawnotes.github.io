@@ -1,0 +1,8 @@
+# 1. Add new files
+git add .
+
+# 2. Commit with message
+git commit -m "Added Bare Acts and Case Laws pages"
+
+# 3. Push to GitHub (replace 'main' with 'master' if your branch is master)
+git push origin main
