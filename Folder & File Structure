@@ -1,0 +1,25 @@
+legal-notes-hub/
+│── index.html
+│
+├── subjects/
+│   ├── index.html
+│   ├── constitutional-law.html
+│   ├── ipc.html
+│   ├── crpc.html
+│   └── evidence.html
+│
+├── bareacts/
+│   ├── index.html
+│   ├── ipc.html
+│   └── crpc.html
+│
+├── caselaws/
+│   ├── index.html
+│   ├── keshavananda-bharati.html
+│   └── maneka-gandhi.html
+│
+└── notes/
+    ├── index.html
+    └── research-cohabitation.html
+
+
