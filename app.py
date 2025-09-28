@@ -1,26 +1,25 @@
-from flask import Flask, request, jsonify
+from dotenv import load_dotenv
+import os
 import openai
-from flask_cors import CORS
 
-app = Flask(__name__)
-CORS(app)
+# Load .env file
+load_dotenv()
 
-openai.api_key = OKINOWA@23
+# Get the API key
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
-@app.route("/ask", methods=["POST"])
-def ask():
-    user_question = request.json.get("question")
-    subject = request.json.get("subject", "Law")
-    
+# Test if API key is loaded
+if openai.api_key:
+    print("✅ OpenAI API Key loaded successfully!")
+else:
+    print("❌ Failed to load OpenAI API Key. Check your .env file.")
+
+# Optional: simple API test (comment out if not needed)
+try:
     response = openai.ChatCompletion.create(
-        model="gpt-4o-mini",
-        messages=[
-            {"role": "system", "content": f"You are a helpful tutor for {subject}."},
-            {"role": "user", "content": user_question}
-        ]
+        model="gpt-3.5-turbo",
+        messages=[{"role": "user", "content": "Say hello!"}]
     )
-    answer = response["choices"][0]["message"]["content"]
-    return jsonify({"answer": answer})
-
-if __name__ == "__main__":
-    app.run(debug=True)
+    print("OpenAI Response:", response.choices[0].message.content)
+except Exception as e:
+    print("Error calling OpenAI API:", e)
