@@ -1,31 +1,103 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Bare Acts - Legal Notes Hub</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Index of important Indian Bare Acts, including the IPC, CrPC, CPC, and Evidence Act, with references to new 2023 laws.">
+
+    <title>Bare Acts | Legal Notes Hub</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Your Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">Legal Notes Hub</a>
-      <ul class="navbar-nav me-auto">
-        <li class="nav-item"><a class="nav-link" href="subjects.html">Subjects</a></li>
-        <li class="nav-item"><a class="nav-link" href="cases.html">Landmark Cases</a></li>
-        <li class="nav-item"><a class="nav-link" href="bareacts.html">Bare Acts</a></li>
-      </ul>
-    </div>
-  </nav>
 
-  <div class="container mt-4">
-    <h1>Bare Acts</h1>
-    <p class="lead">Quick access to important Bare Acts.</p>
-    <ul>
-      <li><a href="#">Indian Penal Code, 1860 (IPC) Bharatiya Nyaya Sanhita, 2023</a></li>
-      <li><a href="#">Code of Criminal Procedure, 1973 (CrPC) THE BHARATIYA NAGARIK SURAKSHA SANHITA, 2023</a></li>
-      <li><a href="#">Code of Civil Procedure, 1908 (CPC)</a></li>
-      <li><a href="#">Indian Evidence Act, 1872 Bharatiya Sakshya Adhiniyam, 2023</a></li>
-    </ul>
-  </div>
+    <!-- SEMANTIC HEADER -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">📚 Legal Notes Hub</a>
+                
+                <!-- Mobile Toggler Button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../subjects.html">Subjects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../cases.html">Landmark Cases</a></li>
+                        <!-- 'active' class highlights the current page's section -->
+                        <li class="nav-item"><a class="nav-link active" href="../bareacts.html">Bare Acts</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- SEMANTIC MAIN CONTENT -->
+    <main>
+        <div class="container mt-4">
+            <!-- Breadcrumb for better navigation -->
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Bare Acts</li>
+                </ol>
+            </nav>
+
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h1 class="h3 mb-0">Bare Acts</h1>
+                </div>
+                <div class="card-body">
+                    <p class="lead">Quick access to important Indian Bare Acts, including both the original and the newly enacted laws of 2023.</p>
+                    
+                    <!-- Using Bootstrap's list-group for a professional look -->
+                    <div class="list-group">
+                        <a href="ipc.html" class="list-group-item list-group-item-action">
+                            <h5 class="mb-1">Indian Penal Code, 1860 (IPC)</h5>
+                            <p class="mb-1">The official criminal code of India, now repealed.</p>
+                            <small>Replaced by: <strong>Bharatiya Nyaya Sanhita, 2023</strong></small>
+                        </a>
+                        <a href="bns-2023.html" class="list-group-item list-group-item-action">
+                            <h5 class="mb-1">Bharatiya Nyaya Sanhita, 2023 (BNS)</h5>
+                            <p class="mb-1">The new comprehensive law to replace the Indian Penal Code.</p>
+                            <small class="text-success">In Effect</small>
+                        </a>
+                        <a href="crpc.html" class="list-group-item list-group-item-action">
+                            <h5 class="mb-1">Code of Criminal Procedure, 1973 (CrPC)</h5>
+                            <p class="mb-1">The main legislation on procedure for administration of substantive criminal law in India.</p>
+                            <small>Replaced by: <strong>Bharatiya Nagarik Suraksha Sanhita, 2023</strong></small>
+                        </a>
+                        <a href="cpc.html" class="list-group-item list-group-item-action">
+                            <h5 class="mb-1">Code of Civil Procedure, 1908 (CPC)</h5>
+                            <p class="mb-1">The procedural law governing civil litigation in India.</p>
+                        </a>
+                        <a href="evidence.html" class="list-group-item list-group-item-action">
+                            <h5 class="mb-1">Indian Evidence Act, 1872</h5>
+                            <p class="mb-1">The law governing the admissibility of evidence in Indian courts, now repealed.</p>
+                            <small>Replaced by: <strong>Bharatiya Sakshya Adhiniyam, 2023</strong></small>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- SEMANTIC FOOTER -->
+    <footer class="bg-light text-center text-lg-start mt-5">
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2024 Legal Notes Hub. Developed for Law Students.
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle (Required for mobile navbar toggle) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
