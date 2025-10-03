@@ -1,12 +1,13 @@
-async function askAI(subject) {
-  const question = document.getElementById("question").value;
-
-  let response = await fetch("http://127.0.0.1:5000/ask", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ question, subject })
-  });
-
-  let data = await response.json();
-  document.getElementById("answer").innerText = data.answer;
-}
+<!-- In your subjects.html or wherever the AI feature is -->
+<div class="ai-chat-container">
+    <h3>Ask an AI about this Subject</h3>
+    <p>Subject: <strong>Constitutional Law</strong></p>
+    
+    <textarea id="question" rows="4" placeholder="Type your question here..."></textarea>
+    
+    <!-- The button that calls the function -->
+    <button id="submit-btn" onclick="askAI('Constitutional Law')">Ask</button>
+    
+    <!-- The area where the answer will be displayed -->
+    <div id="answer" class="answer-box"></div>
+</div>
