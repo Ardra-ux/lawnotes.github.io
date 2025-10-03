@@ -1,55 +1,129 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 20px;
-  background: #f9f9f9;
-  color: #333;
+/* ===================================
+   1. CSS VARIABLES & GLOBAL STYLES
+   =================================== */
+/* Using CSS Variables makes it easy to manage your theme's colors and spacing. */
+:root {
+  --primary-color: #004080;
+  --primary-color-light: #0056b3; /* A slightly lighter shade for hover effects */
+  --background-color: #f9f9f9;
+  --text-color: #333;
+  --white-color: #ffffff;
+  --border-radius: 8px;
+  --spacing-unit: 20px;
 }
 
+/* A modern reset and best practice for predictable layouts */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* A more modern font stack that looks great on all devices */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6; /* Improves readability */
+  background: var(--background-color);
+  color: var(--text-color);
+  padding: var(--spacing-unit);
+}
+
+/* ===================================
+   2. HEADER & NAVIGATION
+   =================================== */
 header {
-  background: #004080;
-  color: white;
-  padding: 15px;
-  border-radius: 8px;
+  background: var(--primary-color);
+  color: var(--white-color);
+  padding: 1rem 1.5rem; /* Using 'rem' for scalable spacing */
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Adds a subtle depth */
 }
 
 header h1 {
   margin: 0;
+  font-size: 2rem;
 }
 
-nav a {
-  color: white;
-  margin-right: 15px;
+/* Use a class for nav links to avoid styling ALL links on the page */
+.nav-link {
+  color: var(--white-color);
+  margin-right: 1rem;
   text-decoration: none;
   font-weight: bold;
+  transition: color 0.3s ease; /* Smooth color transition on hover */
 }
 
+.nav-link:hover {
+  color: #cce7ff; /* A softer hover effect than an underline */
+}
+
+/* ===================================
+   3. MAIN CONTENT
+   =================================== */
 main {
-  margin-top: 20px;
+  margin-top: var(--spacing-unit);
 }
 
-ul {
+/* Use a more specific class for your subject list */
+.content-list {
   list-style-type: none;
   padding: 0;
 }
 
-li {
-  margin: 10px 0;
+.content-list li {
+  margin: 1rem 0;
+  padding: 1rem;
+  background: var(--white-color);
+  border-left: 5px solid var(--primary-color);
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05); /* Subtle shadow for lift */
 }
 
+/* General link styling (for links within the main content) */
 a {
-  color: #004080;
+  color: var(--primary-color);
   text-decoration: none;
+  transition: text-decoration 0.2s ease;
 }
 
 a:hover {
   text-decoration: underline;
 }
 
+/* ===================================
+   4. REUSABLE COMPONENTS
+   =================================== */
 .btn {
   display: inline-block;
-  background: #004080;
-  color: white;
+  background: var(--primary-color);
+  color: var(--white-color);
   padding: 10px 15px;
   border-radius: 5px;
   text-decoration: none;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  border: none; /* Good practice if used on <button> elements */
+}
+
+.btn:hover {
+  background: var(--primary-color-light);
+  text-decoration: none; /* Remove underline on hover for buttons */
+}
+
+/* ===================================
+   5. RESPONSIVENESS (MEDIA QUERIES)
+   =================================== */
+/* These styles apply only on screens 768px wide or smaller (like tablets and phones) */
+@media (max-width: 768px) {
+  body {
+    padding: 10px; /* Reduce padding on smaller screens */
+  }
+
+  header h1 {
+    font-size: 1.5rem; /* Smaller font for mobile */
+  }
+
+  .content-list li {
+    padding: 0.75rem;
+  }
 }
