@@ -1,25 +1,34 @@
 legal-notes-hub/
-│── index.html
 │
-├── subjects/
-│   ├── index.html
-│   ├── constitutional-law.html
-│   ├── ipc.html
-│   ├── crpc.html
-│   └── evidence.html
+├── 📄 index.html                  (Your Homepage)
 │
-├── bareacts/
-│   ├── index.html
-│   ├── ipc.html
-│   └── crpc.html
+├── 📁 assets/                     (For all static assets like images)
+│   └── 📁 images/
+│       └── logo.png               (Example: your website logo)
 │
-├── caselaws/
-│   ├── index.html
-│   ├── keshavananda-bharati.html
-│   └── maneka-gandhi.html
+├── 📁 css/
+│   └── 📄 style.css               (Your main stylesheet)
 │
-└── notes/
-    ├── index.html
-    └── research-cohabitation.html
-
-
+├── 📁 js/
+│   └── 📄 ask_ai.js               (Your AI chatbot script)
+│
+├── 📁 subjects/
+│   ├── 📄 index.html
+│   ├── 📄 constitutional-law.html
+│   ├── 📄 ipc.html
+│   ├── 📄 crpc.html
+│   └── 📄 bsa-2023.html           (Updated for the new law)
+│
+├── 📁 bareacts/
+│   ├── 📄 index.html
+│   ├── 📄 ipc.html
+│   └── 📄 crpc.html
+│
+├── 📁 caselaws/
+│   ├── 📄 index.html
+│   ├── 📄 keshavananda-bharati.html
+│   └── 📄 maneka-gandhi.html
+│
+└── 📁 notes/
+    ├── 📄 index.html
+    └── 📄 research-cohabitation.html
